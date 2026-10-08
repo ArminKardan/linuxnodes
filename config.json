@@ -1,7 +1,6 @@
 {
   "inbounds": [
     {
-      "listen": "0.0.0.0",
       "port": 443,
       "protocol": "vless",
       "settings": {
@@ -14,15 +13,7 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "certificates": [
-            {
-              "certificateFile": "/etc/v2ray/server.crt",
-              "keyFile": "/etc/v2ray/server.key"
-            }
-          ]
-        }
+        "security": "none"
       }
     }
   ],
